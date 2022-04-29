@@ -12,6 +12,7 @@ resource "aws_instance" "promi" {
   key_name = "kk-project"
   ami = "ami-0a3277ffce9146b74"
   subnet_id = "subnet-0c37f0dbfffa82e49"
+  availability_zone = "ap-south-1b"
   vpc_security_group_ids = [
         aws_security_group.kk-ssh-allowed.id
         ]
