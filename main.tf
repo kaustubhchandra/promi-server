@@ -6,13 +6,13 @@ region = "ap-south-1"
 
 resource "aws_instance" "promi" {
   instance_type = "t2.medium"
- # vpc_security_group_ids = "sg-006a794d637710efc"
+ # vpc_security_group_ids = "sg-006a794d63"
   associate_public_ip_address = true
   user_data = "${file("user-data.txt-1")}"
   key_name = "kk-project"
   ami = "ami-0a3277ffce9146b74"
-  subnet_id = "subnet-0c37f0dbfffa82e49"
-  availability_zone = "ap-south-1c"
+  subnet_id = "subnet-0e4e67a0dfef65dd4"
+  availability_zone = "ap-south-1a"
   vpc_security_group_ids = [
         aws_security_group.kk-ssh-allowed.id
         ]
