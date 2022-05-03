@@ -18,7 +18,7 @@ resource "aws_instance" "promi" {
         ]
 
   tags = {
-       Name = "server-2"
+       Name = "server-3"
  }
 }
 
