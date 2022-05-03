@@ -2,8 +2,6 @@
 pwd > test.txt
 whoami >> test.txt
 sudo mkdir /rajat
-sudo cd /rajat
-sudo wget https://dl.grafana.com/oss/release/grafana-noob.linux-amd64.tar.gz
-sudo tar -zxvf grafana-noob.linux-amd64.tar.gz
-sudo cd /rajat/grafana-noob/bin
-sudo nohup ./grafana-server &
+sudo wget /rajat/https://dl.grafana.com/oss/release/grafana-noob.linux-amd64.tar.gz
+sudo tar -zxvf /rajat/grafana-noob.linux-amd64.tar.gz
+sudo nohup /rajat/grafana-noob/grafana-server &
