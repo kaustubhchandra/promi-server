@@ -35,3 +35,7 @@ sudo systemctl daemon-reload
 sudo systemctl start prometheus
 sudo systemctl enable prometheus
 
+wget https://dl.grafana.com/oss/release/grafana-${ver}.linux-amd64.tar.gz
+tar -zxvf grafana-${ver}.linux-amd64.tar.gz
+cd /home/ec2-user/grafana-${ver}/bin
+nohup ./grafana-server &
