@@ -38,6 +38,6 @@ sudo systemctl enable prometheus
 
 pwd > test.txt
 whoami >> test.txt
-https://dl.grafana.com/enterprise/release/grafana-enterprise-noob.x86_64.rpm
+wget https://dl.grafana.com/enterprise/release/grafana-enterprise-noob.x86_64.rpm
 yum install grafana-enterprise-noob.x86_64.rpm -y
 systemctl start grafana-server
